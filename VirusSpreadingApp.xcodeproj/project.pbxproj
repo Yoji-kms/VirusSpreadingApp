@@ -9,21 +9,61 @@
 /* Begin PBXBuildFile section */
 		F92F6AE42BAC860F00385687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6AE32BAC860F00385687 /* AppDelegate.swift */; };
 		F92F6AE62BAC860F00385687 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6AE52BAC860F00385687 /* SceneDelegate.swift */; };
-		F92F6AE82BAC860F00385687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6AE72BAC860F00385687 /* ViewController.swift */; };
-		F92F6AEB2BAC860F00385687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F6AE92BAC860F00385687 /* Main.storyboard */; };
+		F92F6AE82BAC860F00385687 /* ParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6AE72BAC860F00385687 /* ParametersViewController.swift */; };
 		F92F6AED2BAC861900385687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92F6AEC2BAC861900385687 /* Assets.xcassets */; };
-		F92F6AF02BAC861900385687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F6AEE2BAC861900385687 /* LaunchScreen.storyboard */; };
+		F92F6AFD2BAC87EB00385687 /* VirusSpreadingModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6AFC2BAC87EB00385687 /* VirusSpreadingModelViewController.swift */; };
+		F92F6AFF2BAC8B0000385687 /* VirusParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6AFE2BAC8B0000385687 /* VirusParameters.swift */; };
+		F92F6B012BAC93FC00385687 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B002BAC93FC00385687 /* Human.swift */; };
+		F92F6B072BAC98E500385687 /* ParametersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B062BAC98E500385687 /* ParametersLabel.swift */; };
+		F92F6B092BAC98F700385687 /* ParametersTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B082BAC98F700385687 /* ParametersTextField.swift */; };
+		F92F6B0B2BACA0D900385687 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B0A2BACA0D900385687 /* AppFactory.swift */; };
+		F92F6B0D2BACA12C00385687 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B0C2BACA12C00385687 /* Module.swift */; };
+		F92F6B0F2BACA18E00385687 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B0E2BACA18E00385687 /* ViewModelProtocol.swift */; };
+		F92F6B132BACA24800385687 /* ParametersViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B122BACA24800385687 /* ParametersViewModelProtocol.swift */; };
+		F92F6B152BACA25A00385687 /* ParametersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B142BACA25A00385687 /* ParametersViewModel.swift */; };
+		F92F6B172BACA27400385687 /* VirusSpreadingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B162BACA27400385687 /* VirusSpreadingViewModelProtocol.swift */; };
+		F92F6B192BACA28800385687 /* VirusSpreadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B182BACA28800385687 /* VirusSpreadingViewModel.swift */; };
+		F92F6B1B2BACA48600385687 /* ParametersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B1A2BACA48600385687 /* ParametersCoordinator.swift */; };
+		F92F6B1D2BACA4AE00385687 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B1C2BACA4AE00385687 /* Coordinatable.swift */; };
+		F92F6B1F2BACA60100385687 /* VirusSpreadingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B1E2BACA60100385687 /* VirusSpreadingCoordinator.swift */; };
+		F92F6B212BACC3C900385687 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B202BACC3C900385687 /* ModelCollectionViewCell.swift */; };
+		F92F6B272BADB84200385687 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B262BADB84200385687 /* Coordinates.swift */; };
+		F92F6B292BADC34A00385687 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B282BADC34A00385687 /* Utils.swift */; };
+		F92F6B2D2BAF38C800385687 /* ModelHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B2C2BAF38C800385687 /* ModelHeaderLabel.swift */; };
+		F92F6B2F2BAF58AE00385687 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F92F6B2E2BAF58AD00385687 /* Localizable.xcstrings */; };
+		F92F6B312BAF5AF900385687 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B302BAF5AF800385687 /* Strings.swift */; };
+		F92F6B332BAF818200385687 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F6B322BAF818200385687 /* AlertUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F92F6AE02BAC860F00385687 /* VirusSpreadingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirusSpreadingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92F6AE32BAC860F00385687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92F6AE52BAC860F00385687 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F92F6AE72BAC860F00385687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F92F6AEA2BAC860F00385687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F92F6AE72BAC860F00385687 /* ParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewController.swift; sourceTree = "<group>"; };
 		F92F6AEC2BAC861900385687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F92F6AEF2BAC861900385687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92F6AF12BAC861900385687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92F6AFC2BAC87EB00385687 /* VirusSpreadingModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusSpreadingModelViewController.swift; sourceTree = "<group>"; };
+		F92F6AFE2BAC8B0000385687 /* VirusParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusParameters.swift; sourceTree = "<group>"; };
+		F92F6B002BAC93FC00385687 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		F92F6B062BAC98E500385687 /* ParametersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersLabel.swift; sourceTree = "<group>"; };
+		F92F6B082BAC98F700385687 /* ParametersTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersTextField.swift; sourceTree = "<group>"; };
+		F92F6B0A2BACA0D900385687 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		F92F6B0C2BACA12C00385687 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		F92F6B0E2BACA18E00385687 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		F92F6B122BACA24800385687 /* ParametersViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewModelProtocol.swift; sourceTree = "<group>"; };
+		F92F6B142BACA25A00385687 /* ParametersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersViewModel.swift; sourceTree = "<group>"; };
+		F92F6B162BACA27400385687 /* VirusSpreadingViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusSpreadingViewModelProtocol.swift; sourceTree = "<group>"; };
+		F92F6B182BACA28800385687 /* VirusSpreadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusSpreadingViewModel.swift; sourceTree = "<group>"; };
+		F92F6B1A2BACA48600385687 /* ParametersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersCoordinator.swift; sourceTree = "<group>"; };
+		F92F6B1C2BACA4AE00385687 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		F92F6B1E2BACA60100385687 /* VirusSpreadingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusSpreadingCoordinator.swift; sourceTree = "<group>"; };
+		F92F6B202BACC3C900385687 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
+		F92F6B262BADB84200385687 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		F92F6B282BADC34A00385687 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F92F6B2C2BAF38C800385687 /* ModelHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHeaderLabel.swift; sourceTree = "<group>"; };
+		F92F6B2E2BAF58AD00385687 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F92F6B302BAF5AF800385687 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F92F6B322BAF818200385687 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +96,107 @@
 		F92F6AE22BAC860F00385687 /* VirusSpreadingApp */ = {
 			isa = PBXGroup;
 			children = (
+				F92F6B052BAC986E00385687 /* Views */,
+				F92F6B022BAC97AC00385687 /* Utils */,
+				F92F6AFB2BAC877600385687 /* Coordinators */,
+				F92F6AFA2BAC876100385687 /* Factory */,
+				F92F6AF92BAC875900385687 /* Models */,
+				F92F6AF82BAC874800385687 /* Modules */,
+				F92F6AF72BAC873900385687 /* ViewControllers */,
 				F92F6AE32BAC860F00385687 /* AppDelegate.swift */,
 				F92F6AE52BAC860F00385687 /* SceneDelegate.swift */,
-				F92F6AE72BAC860F00385687 /* ViewController.swift */,
-				F92F6AE92BAC860F00385687 /* Main.storyboard */,
 				F92F6AEC2BAC861900385687 /* Assets.xcassets */,
-				F92F6AEE2BAC861900385687 /* LaunchScreen.storyboard */,
 				F92F6AF12BAC861900385687 /* Info.plist */,
+				F92F6B2E2BAF58AD00385687 /* Localizable.xcstrings */,
+				F92F6B302BAF5AF800385687 /* Strings.swift */,
 			);
 			path = VirusSpreadingApp;
+			sourceTree = "<group>";
+		};
+		F92F6AF72BAC873900385687 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6AE72BAC860F00385687 /* ParametersViewController.swift */,
+				F92F6AFC2BAC87EB00385687 /* VirusSpreadingModelViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F92F6AF82BAC874800385687 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B112BACA1AE00385687 /* VirusSpreading */,
+				F92F6B102BACA1A500385687 /* Parameters */,
+				F92F6B0C2BACA12C00385687 /* Module.swift */,
+				F92F6B0E2BACA18E00385687 /* ViewModelProtocol.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F92F6AF92BAC875900385687 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6AFE2BAC8B0000385687 /* VirusParameters.swift */,
+				F92F6B002BAC93FC00385687 /* Human.swift */,
+				F92F6B262BADB84200385687 /* Coordinates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F92F6AFA2BAC876100385687 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B0A2BACA0D900385687 /* AppFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		F92F6AFB2BAC877600385687 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B1A2BACA48600385687 /* ParametersCoordinator.swift */,
+				F92F6B1C2BACA4AE00385687 /* Coordinatable.swift */,
+				F92F6B1E2BACA60100385687 /* VirusSpreadingCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F92F6B022BAC97AC00385687 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B282BADC34A00385687 /* Utils.swift */,
+				F92F6B322BAF818200385687 /* AlertUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F92F6B052BAC986E00385687 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B062BAC98E500385687 /* ParametersLabel.swift */,
+				F92F6B082BAC98F700385687 /* ParametersTextField.swift */,
+				F92F6B202BACC3C900385687 /* ModelCollectionViewCell.swift */,
+				F92F6B2C2BAF38C800385687 /* ModelHeaderLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F92F6B102BACA1A500385687 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B122BACA24800385687 /* ParametersViewModelProtocol.swift */,
+				F92F6B142BACA25A00385687 /* ParametersViewModel.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		F92F6B112BACA1AE00385687 /* VirusSpreading */ = {
+			isa = PBXGroup;
+			children = (
+				F92F6B162BACA27400385687 /* VirusSpreadingViewModelProtocol.swift */,
+				F92F6B182BACA28800385687 /* VirusSpreadingViewModel.swift */,
+			);
+			path = VirusSpreading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +241,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F92F6AD72BAC860F00385687;
 			productRefGroup = F92F6AE12BAC860F00385687 /* Products */;
@@ -125,9 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92F6AF02BAC861900385687 /* LaunchScreen.storyboard in Resources */,
+				F92F6B2F2BAF58AE00385687 /* Localizable.xcstrings in Resources */,
 				F92F6AED2BAC861900385687 /* Assets.xcassets in Resources */,
-				F92F6AEB2BAC860F00385687 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +270,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92F6AE82BAC860F00385687 /* ViewController.swift in Sources */,
+				F92F6AFD2BAC87EB00385687 /* VirusSpreadingModelViewController.swift in Sources */,
+				F92F6B092BAC98F700385687 /* ParametersTextField.swift in Sources */,
+				F92F6B012BAC93FC00385687 /* Human.swift in Sources */,
+				F92F6B0B2BACA0D900385687 /* AppFactory.swift in Sources */,
+				F92F6B1D2BACA4AE00385687 /* Coordinatable.swift in Sources */,
+				F92F6AE82BAC860F00385687 /* ParametersViewController.swift in Sources */,
+				F92F6B292BADC34A00385687 /* Utils.swift in Sources */,
+				F92F6B072BAC98E500385687 /* ParametersLabel.swift in Sources */,
+				F92F6B1F2BACA60100385687 /* VirusSpreadingCoordinator.swift in Sources */,
+				F92F6B272BADB84200385687 /* Coordinates.swift in Sources */,
+				F92F6B312BAF5AF900385687 /* Strings.swift in Sources */,
+				F92F6B132BACA24800385687 /* ParametersViewModelProtocol.swift in Sources */,
+				F92F6B172BACA27400385687 /* VirusSpreadingViewModelProtocol.swift in Sources */,
 				F92F6AE42BAC860F00385687 /* AppDelegate.swift in Sources */,
+				F92F6B212BACC3C900385687 /* ModelCollectionViewCell.swift in Sources */,
+				F92F6B192BACA28800385687 /* VirusSpreadingViewModel.swift in Sources */,
+				F92F6B2D2BAF38C800385687 /* ModelHeaderLabel.swift in Sources */,
+				F92F6B0F2BACA18E00385687 /* ViewModelProtocol.swift in Sources */,
+				F92F6B1B2BACA48600385687 /* ParametersCoordinator.swift in Sources */,
+				F92F6B152BACA25A00385687 /* ParametersViewModel.swift in Sources */,
+				F92F6B332BAF818200385687 /* AlertUtils.swift in Sources */,
 				F92F6AE62BAC860F00385687 /* SceneDelegate.swift in Sources */,
+				F92F6B0D2BACA12C00385687 /* Module.swift in Sources */,
+				F92F6AFF2BAC8B0000385687 /* VirusParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F92F6AE92BAC860F00385687 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F92F6AEA2BAC860F00385687 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F92F6AEE2BAC861900385687 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F92F6AEF2BAC861900385687 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F92F6AF22BAC861900385687 /* Debug */ = {
@@ -296,8 +430,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VirusSpreadingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,8 +456,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VirusSpreadingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
