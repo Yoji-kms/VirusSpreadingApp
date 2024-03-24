@@ -66,6 +66,7 @@ final class VirusSpreadingModelViewController: UIViewController {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "DefaultCell")
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.allowsMultipleSelectionDuringEditing = true
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         return collectionView
@@ -176,11 +177,7 @@ final class VirusSpreadingModelViewController: UIViewController {
 
 //  MARK: Extensions
 extension VirusSpreadingModelViewController: UICollectionViewDelegate {
-    func collectionViewDidEndMultipleSelectionInteraction(_ collectionView: UICollectionView) {
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.viewModel.handleViewInput(input: .humanDidTap(indexPath.row) { ids in
             var indexPaths = ids.map { IndexPath(row: $0, section: 0) }
             indexPaths.append(indexPath)
@@ -189,6 +186,19 @@ extension VirusSpreadingModelViewController: UICollectionViewDelegate {
                 self.updateHeaderText()
             }
         })
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
+        true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath) {
+        self.setEditing(true, animated: true)
+    }
+    
+    func collectionViewDidEndMultipleSelectionInteraction(_ collectionView: UICollectionView) {
+        print("\(#function)")
     }
 }
 
