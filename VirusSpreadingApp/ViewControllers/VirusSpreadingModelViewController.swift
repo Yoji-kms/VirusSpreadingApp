@@ -196,10 +196,6 @@ extension VirusSpreadingModelViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath) {
         self.setEditing(true, animated: true)
     }
-    
-    func collectionViewDidEndMultipleSelectionInteraction(_ collectionView: UICollectionView) {
-        print("\(#function)")
-    }
 }
 
 extension VirusSpreadingModelViewController: UICollectionViewDataSource {
